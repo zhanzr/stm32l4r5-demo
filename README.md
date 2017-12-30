@@ -3,15 +3,15 @@ ARMCC 5.06 Optimized for speed.
 #define RUN_NUMBER	300000
 
 With microlib:
-Microseconds for one run through Dhrystone[3-3926]:    13.1 
-Dhrystones per Second:                      76472.1 
+Microseconds for one run through Dhrystone[5-2803]:     9.3 
+Dhrystones per Second:                      107219.4 
 Without microlib:
-Microseconds for one run through Dhrystone[3-2802]:     9.3 
-Dhrystones per Second:                      107181.1 
+Microseconds for one run through Dhrystone[5-2190]:     7.3 
+Dhrystones per Second:                      137299.8 
 
 =================================================================
 With microlib
-Dhrystone For STM32F4R5 Nucleo Board @ 120000000 Hz
+Dhrystone For STM32L4R5 Nucleo Board @ 120000000 Hz
 
 Dhrystone Benchmark, Version 2.1 (Language: C)
 
@@ -70,13 +70,13 @@ Str_1_Loc:           DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:           DHRYSTONE PROGRAM, 2'ND STRING
         should be:   DHRYSTONE PROGRAM, 2'ND STRING
 
-Microseconds for one run through Dhrystone[3-3926]:    13.1 
-Dhrystones per Second:                      76472.1 
+Microseconds for one run through Dhrystone[5-2803]:     9.3 
+Dhrystones per Second:                      107219.4 
 
 
 
 Without micrlib:
-Dhrystone For STM32F4R5 Nucleo Board @ 120000000 Hz
+Dhrystone For STM32L4R5 Nucleo Board @ 120000000 Hz
 
 Dhrystone Benchmark, Version 2.1 (Language: C)
 
@@ -135,5 +135,6 @@ Str_1_Loc:           DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:           DHRYSTONE PROGRAM, 2'ND STRING
         should be:   DHRYSTONE PROGRAM, 2'ND STRING
 
-Microseconds for one run through Dhrystone[3-2802]:     9.3 
-Dhrystones per Second:                      107181.1 
+Microseconds for one run through Dhrystone[5-2190]:     7.3 
+Dhrystones per Second:                      137299.8 
+
