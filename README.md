@@ -1,3 +1,3 @@
-ADC doesn't work properly.
+ADC, ITM works now.
 
 The Clock configuration in the CubeMX project is incorrect.
