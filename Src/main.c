@@ -103,7 +103,12 @@ int original_main(void)
   /* USER CODE BEGIN 2 */
 	HAL_ADC_Start_DMA(&hadc1, (uint32_t*)&g_adcBuf, ADC_NUMOFCHANNEL);
 
-	printf("Coremark For STM32F4R5 Nucleo Board @ %u Hz\n", SystemCoreClock);
+	printf("Coremark For STM32F4R5 Nucleo Board @ %u Hz, %u, %u, %u\n",
+	SystemCoreClock,
+	HAL_RCC_GetHCLKFreq(),
+	HAL_RCC_GetSysClockFreq(),
+	HZ
+	);
 
 /* Initializations */
 			
@@ -128,6 +133,7 @@ int original_main(void)
 //		HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);							
 //		HAL_Delay(5000);
 //  }
+	return 0;
   /* USER CODE END 3 */
 
 }
@@ -196,7 +202,7 @@ void SystemClock_Config(void)
 
     /**Configure the Systick interrupt time 
     */
-  HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq()/CLOCKS_PER_SEC);
+  HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq()/HZ);
 
     /**Configure the Systick 
     */
@@ -271,7 +277,7 @@ void SystemClock_Config_120(void)
 
     /**Configure the Systick interrupt time 
     */
-  HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq()/CLOCKS_PER_SEC);
+  HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq()/HZ);
 
     /**Configure the Systick 
     */
