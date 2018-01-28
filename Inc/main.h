@@ -9,7 +9,7 @@
   * inserted by the user or by software development tools
   * are owned by their respective copyright owners.
   *
-  * COPYRIGHT(c) 2017 STMicroelectronics
+  * COPYRIGHT(c) 2018 STMicroelectronics
   *
   * Redistribution and use in source and binary forms, with or without modification,
   * are permitted provided that the following conditions are met:
@@ -49,12 +49,26 @@
 
 #define B1_Pin GPIO_PIN_13
 #define B1_GPIO_Port GPIOC
+#define DispIoEn_Pin GPIO_PIN_13
+#define DispIoEn_GPIO_Port GPIOF
+#define PWR_EN_Pin GPIO_PIN_14
+#define PWR_EN_GPIO_Port GPIOF
+#define DISP_RST_L_Pin GPIO_PIN_15
+#define DISP_RST_L_GPIO_Port GPIOF
+#define BRD_CTRL_Pin GPIO_PIN_9
+#define BRD_CTRL_GPIO_Port GPIOE
+#define DISCHARGE_Pin GPIO_PIN_11
+#define DISCHARGE_GPIO_Port GPIOE
+#define DISP_BUSY_Pin GPIO_PIN_13
+#define DISP_BUSY_GPIO_Port GPIOE
 #define LD3_Pin GPIO_PIN_14
 #define LD3_GPIO_Port GPIOB
 #define STLK_RX_Pin GPIO_PIN_8
 #define STLK_RX_GPIO_Port GPIOD
 #define STLK_TX_Pin GPIO_PIN_9
 #define STLK_TX_GPIO_Port GPIOD
+#define SPI_CS_Pin GPIO_PIN_14
+#define SPI_CS_GPIO_Port GPIOD
 #define USB_OverCurrent_Pin GPIO_PIN_5
 #define USB_OverCurrent_GPIO_Port GPIOG
 #define USB_PowerSwitchOn_Pin GPIO_PIN_6

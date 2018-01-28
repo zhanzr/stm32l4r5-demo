@@ -1,8 +1,8 @@
 /**
   ******************************************************************************
-  * File Name          : ADC.h
+  * File Name          : SPI.h
   * Description        : This file provides code for the configuration
-  *                      of the ADC instances.
+  *                      of the SPI instances.
   ******************************************************************************
   ** This notice applies to any and all portions of this file
   * that are not between comment pairs USER CODE BEGIN and
@@ -37,8 +37,8 @@
   ******************************************************************************
   */
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __adc_H
-#define __adc_H
+#ifndef __spi_H
+#define __spi_H
 #ifdef __cplusplus
  extern "C" {
 #endif
@@ -51,7 +51,7 @@
 
 /* USER CODE END Includes */
 
-extern ADC_HandleTypeDef hadc1;
+extern SPI_HandleTypeDef hspi1;
 
 /* USER CODE BEGIN Private defines */
 
@@ -59,7 +59,7 @@ extern ADC_HandleTypeDef hadc1;
 
 extern void _Error_Handler(char *, int);
 
-void MX_ADC1_Init(void);
+void MX_SPI1_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 
@@ -68,7 +68,7 @@ void MX_ADC1_Init(void);
 #ifdef __cplusplus
 }
 #endif
-#endif /*__ adc_H */
+#endif /*__ spi_H */
 
 /**
   * @}
