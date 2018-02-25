@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>l4r5_eink</TargetName>
+      <TargetName>l4r5_t1</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
@@ -186,7 +186,7 @@
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
-            <useUlib>1</useUlib>
+            <useUlib>0</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32L4R5xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;  ../Drivers/STM32L4xx_HAL_Driver/Inc;  ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy;  ../Drivers/CMSIS/Device/ST/STM32L4xx/Include;  ../Drivers/CMSIS/Include;  E:\xmc1100_prj\coremark_v1.0;  E:\xmc1100_prj\coremark_v1.0\L4R5</IncludePath>
+              <IncludePath>../Inc;   ../Drivers/STM32L4xx_HAL_Driver/Inc;   ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy;   ../Drivers/CMSIS/Device/ST/STM32L4xx/Include;   ../Drivers/CMSIS/Include;   E:\xmc1100_prj\coremark_v1.0;   E:\xmc1100_prj\coremark_v1.0\L4R5</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -506,7 +506,7 @@
           <Files>
             <File>
               <FileName>main.c</FileName>
-              <FileType>1</FileType>
+              <FileType>8</FileType>
               <FilePath>../Src/main.c</FilePath>
             </File>
             <File>
@@ -539,20 +539,20 @@
               <FileType>1</FileType>
               <FilePath>../Src/spi.c</FilePath>
             </File>
+            <File>
+              <FileName>i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Src/i2c.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>eink</GroupName>
+          <GroupName>lcd_i2c_pcf8574</GroupName>
           <Files>
             <File>
-              <FileName>pervasive_eink_hardware_driver.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Src\pervasive_eink_hardware_driver.c</FilePath>
-            </File>
-            <File>
-              <FileName>resource.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Src\resource.c</FilePath>
+              <FileName>LiquidCrystal.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Src\LiquidCrystal.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -579,16 +579,16 @@
   <RTE>
     <apis/>
     <components>
-      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.0.2" condition="ARMv6_7_8-M Device">
-        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.2.0"/>
+      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.1.1" condition="ARMv6_7_8-M Device">
+        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.3.0"/>
         <targetInfos>
-          <targetInfo name="l4r5_eink"/>
+          <targetInfo name="l4r5_t1"/>
         </targetInfos>
       </component>
       <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="I/O" Csub="STDOUT" Cvariant="ITM" Cvendor="Keil" Cversion="1.2.1" condition="ARMCC Cortex-M with ITM">
         <package name="ARM_Compiler" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.3.3"/>
         <targetInfos>
-          <targetInfo name="l4r5_eink"/>
+          <targetInfo name="l4r5_t1"/>
         </targetInfos>
       </component>
     </components>
